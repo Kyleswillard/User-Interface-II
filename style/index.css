@@ -4,8 +4,13 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #dfe6e9;
+  width: 100%;
 }
 
 .flex-container {
@@ -13,12 +18,12 @@ body {
   justify-content: space-between;
   align-items: center;
   background: deepskyblue;
-  border-bottom: 1.5px solid #00394d;
+  border-bottom: .2rem solid #00394d;
 }
 
 /* Navigation Selectors */
 .logo {
-  margin: 0 0 0 .5em;
+  margin: 0 0 0 .5rem;
 }
 
 .logo,
@@ -39,7 +44,7 @@ body {
 
 .navigation a {
   display: block;
-  padding: 1em;
+  padding: 1rem;
   color: #00394d;
 
 }
@@ -62,12 +67,12 @@ body {
 
 /* Media Box */
 .media_box {
-  margin: 1.5em 5em;
+  margin: 1.5rem 5rem;
   background-color: #00394d;
   background-image: url('https://images.unsplash.com/photo-1520022283252-ca69c721d247?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1115&q=80');
   background-position: bottom;
   opacity: 55%;
-  height: 25em;
+  height: 25rem;
   width: auto;
   display: flex;
   justify-content: center;
@@ -77,14 +82,14 @@ body {
 }
 
 .media_box img {
-  height: 30em;
-  padding: 2em;
+  height: 30rem;
+  padding: 2rem;
   border-radius: 5px;
 
 }
 
 .hero_text {
-  padding: 10em;
+  padding: 10rem;
   color: white;
   justify-content: center;
 }
@@ -101,11 +106,11 @@ body {
   background-color: white;
   padding: 10px;
   border-radius: 5px;
-  width: 20em;
+  width: 30rem;
   height: auto;
-  margin: 2em;
+  margin: 2rem;
   text-align: center;
-  box-shadow: 2px 2px deepskyblue;
+  box-shadow: .2rem .2rem deepskyblue;
 }
 
 .cardphoto {
@@ -116,8 +121,8 @@ body {
 }
 
 .cardphoto img {
-  height: 10em;
-  width: 20em;
+  height: 10rem;
+  width: 30rem;
   border-radius: 5px;
 }
 
@@ -125,28 +130,32 @@ body {
 footer {
   height: 3rem;
   background-color: deepskyblue;
+  margin: 0;
 }
 
 .footer-flex-container {
   display: flex;
   justify-content: center;
+  border-top: .2rem solid #00394d;
 
 }
 
 footer ul {
   list-style: none;
+  
 
 }
 
 footer li {
-  padding: 1em;
+  padding: 1rem;
+  
 }
 
 footer li a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  border: 1px solid white;
+  border: .1rem solid white;
   border-radius: 5px;
   padding: .25em;
   margin: 0 auto;
@@ -155,5 +164,25 @@ footer li a {
 footer li a:hover {
   background-color: white;
   color: #00394d;
-  border: 1px solid #00394d;
+  border: .1rem solid #00394d;
 }
+
+/*Social Media Icons*/
+.social_icon a {
+  padding: .25rem;
+  margin: .25rem;
+}
+
+.social_icon {
+  margin: .35rem;
+}
+
+.github {
+  color: #181717;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+/* Adding Different Resolutions*/
