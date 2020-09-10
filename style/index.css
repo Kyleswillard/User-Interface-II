@@ -35,7 +35,6 @@ body {
 
 .navigation {
   display: flex;
-
 }
 
 .navigation a {
@@ -70,16 +69,17 @@ body {
   opacity: 55%;
   height: 25em;
   width: auto;
-
   display: flex;
   justify-content: center;
   object-fit: cover;
+  border-radius: 5px;
   box-shadow: 5px 5px deepskyblue;
 }
 
 .media_box img {
   height: 30em;
   padding: 2em;
+  border-radius: 5px;
 
 }
 
@@ -90,12 +90,70 @@ body {
 }
 
 /*Gallery Cards */
+.card_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .card {
   background-color: white;
   padding: 10px;
   border-radius: 5px;
-  min-height: 300px;
+  width: 20em;
+  height: auto;
+  margin: 2em;
+  text-align: center;
+  box-shadow: 2px 2px deepskyblue;
 }
+
 .cardphoto {
   border-radius: 50%;
+  height: auto;
+  width: 10%;
+
+}
+
+.cardphoto img {
+  height: 10em;
+  width: 20em;
+  border-radius: 5px;
+}
+
+/* Bottom Contact Button*/
+footer {
+  height: 3rem;
+  background-color: deepskyblue;
+}
+
+.footer-flex-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+footer ul {
+  list-style: none;
+
+}
+
+footer li {
+  padding: 1em;
+}
+
+footer li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: .25em;
+  margin: 0 auto;
+}
+
+footer li a:hover {
+  background-color: white;
+  color: #00394d;
+  border: 1px solid #00394d;
 }
