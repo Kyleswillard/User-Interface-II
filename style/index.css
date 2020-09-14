@@ -5,6 +5,7 @@
   }
   
   html {
+    /*Changed font size to work dynamically*/
     font-size: 62.5%;
   }
   
@@ -69,7 +70,7 @@
   .media_box {
     margin: 1.5rem 5rem;
     background-color: #00394d;
-    background-image: url('https://images.unsplash.com/photo-1520022283252-ca69c721d247?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1115&q=80');
+    background-image: url('https://images.unsplash.com/photo-1520022283252-ca69c721d247?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80');
     background-position: bottom;
     opacity: 55%;
     height: 25rem;
@@ -92,6 +93,9 @@
     padding: 10rem;
     color: white;
     justify-content: center;
+  }
+  .mobile_only {
+    display: none;
   }
   
   /*Gallery Cards */
@@ -185,4 +189,74 @@
     color: #0077b5;
   }
   
-  /* Adding Different Resolutions*/
+  /* Adding Different Resolutions for Day 2*/
+  
+
+  @media (min-width: 1440px) {
+    .card_box {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .media_box {
+      background-image: url('https://images.unsplash.com/photo-1520022283252-ca69c721d247?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1440&q=80') no-repeat;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .card_box {
+      justify-content: space-evenly;
+    } 
+
+  }
+  @media (min-height: 800px) {
+    .media_box {
+      background-image: url('https://images.unsplash.com/photo-1520022283252-ca69c721d247?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=80');
+    }
+  }
+  @media (max-width: 500px) {
+    .flex-container {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+      
+    }
+    nav ul li a{
+      border: 1px solid black;
+      
+    }
+    .mobile_only {
+      display: flex;
+      margin: 0 auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .mobile_only a {
+      padding: 1rem;
+      width: 35%;
+      text-align: center;
+      font-weight: bolder;
+      background-color: deepskyblue;
+      border: 1px solid black;
+      margin: .75rem;
+      text-decoration: none;
+      color: white;
+    }
+    .mobile_only a:hover {
+      background-color: #00394d;
+      color: white;
+    }
+    .media_box {
+      background-image: url('https://images.unsplash.com/photo-1520022283252-ca69c721d247?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80');
+    }
+
+  }
+  @media (min-width: 1800px) {
+    .card_box {
+       width: 60%;
+       margin: 0 auto;
+     }
+   }
